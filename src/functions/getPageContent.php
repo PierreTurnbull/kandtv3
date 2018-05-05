@@ -8,8 +8,7 @@ function getPageContent(PDO $connection)
         `span-class`,
         `span-text`,
         `img-alt`,
-        `img-src`,
-        `nav-title`
+        `img-src`
     FROM
         `page`
     WHERE
