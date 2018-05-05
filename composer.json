@@ -2,13 +2,12 @@
     "name": "nounoursnoir/kand-tv3",
     "type": "project",
     "require-dev": {
-        "symfony/var-dumper": "^4.0"
+        "symfony/var-dumper": "^4.0.9"
     },
     "license": "MIT",
     "require": {},
     "autoload": {
         "psr-4": {
-            "Page\\": "src/Page"
         }
     }
 }
