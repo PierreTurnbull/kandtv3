@@ -1,5 +1,9 @@
 <?php
-function displayLi($liData)
+/**
+ * Displays a nav item filled with informations in $liData
+ * @param array $liData
+ */
+function displayLi(array $liData) : void
 {
     $active = "";
     if (isset($_GET["id"]) && $_GET["id"] === $liData["id"]) {
@@ -8,7 +12,7 @@ function displayLi($liData)
     ?>
     <li <?= $active ?>>
         <a href=<?= "show.php?id=" . $liData["id"] ?>>
-            <?= $liData["title"] ?>
+            <?= $liData["id"] . " - " . $liData["title"] ?>
         </a>
     </li>
     <?php

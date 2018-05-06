@@ -1,8 +1,15 @@
 <?php
-function getPageContent(PDO $connection)
+/**
+ * Returns an array with all informations of the page whose id is $_GET["is"]
+ * @param PDO $connection
+ * @return array
+ */
+function getPageContent(PDO $connection) : array
 {
     $queryStr = "
     SELECT
+        `title`,
+        `id`,
         `h1`,
         `p`,
         `span-class`,
